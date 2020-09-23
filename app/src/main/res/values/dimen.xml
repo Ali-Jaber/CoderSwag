@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_margin_lef">16dp</dimen>
+    <dimen name="main_margin_top">16dp</dimen>
+    <dimen name="main_text_size">16dp</dimen>
+    <dimen name="main_width">0dp</dimen>
+    <dimen name="main_height">0dp</dimen>
+    <dimen name="product_margin_left">16dp</dimen>
+    <dimen name="product_margin_top">16dp</dimen>
+    <dimen name="product_width">0dp</dimen>
+    <dimen name="category_height">150dp</dimen>
+    <dimen name="category_width">0dp</dimen>
+    <dimen name="category_margin_start">0dp</dimen>
+    <dimen name="category_margin_top">8dp</dimen>
+    <dimen name="category_margin_end">0dp</dimen>
+    <dimen name="category_margin_bottom">8dp</dimen>
+    <dimen name="category_text_size">18sp</dimen>
+    <dimen name="product_list_width">0dp</dimen>
+    <dimen name="product_list_height">0dp</dimen>
+    <dimen name="product_list_margin_start">8dp</dimen>
+    <dimen name="product_list_margin_end">8dp</dimen>
+    <dimen name="product_list_margin_top">8dp</dimen>
+    <dimen name="product_list_text_size">8dp</dimen>
+    <dimen name="product_list_product_name_margin_start">16dp</dimen>
+    <dimen name="product_list_product_name_margin_end">16dp</dimen>
+    <dimen name="product_list_product_price_margin_top">8dp</dimen>
+    <dimen name="product_list_product_price_margin_start">8dp</dimen>
+    <dimen name="product_list_product_price_margin_end">8dp</dimen>
+    <dimen name="product_list_product_price_margin_bottom">8dp</dimen>
+</resources>
