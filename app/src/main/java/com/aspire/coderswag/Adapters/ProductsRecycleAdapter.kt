@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.aspire.coderswag.Model.Product
 import com.aspire.coderswag.R
 
-class ProductsAdapter(private val context: Context, private val products: List<Product>) :
-    RecyclerView.Adapter<ProductsAdapter.ProductHolder>() {
+class ProductsRecycleAdapter(private val context: Context, private val products: List<Product>) :
+    RecyclerView.Adapter<ProductsRecycleAdapter.ProductHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.category_list_item, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.products_list_item, parent, false)
         return ProductHolder(view)
     }
 

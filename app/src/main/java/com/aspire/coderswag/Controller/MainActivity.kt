@@ -2,7 +2,10 @@ package com.aspire.coderswag.Controller
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aspire.coderswag.Adapters.CategoryAdapter
 import com.aspire.coderswag.Adapters.CategoryRecycleAdapter

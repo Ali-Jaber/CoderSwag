@@ -2,26 +2,30 @@ package com.aspire.coderswag.Controller
 
 import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import com.aspire.coderswag.Adapters.ProductsAdapter
+import com.aspire.coderswag.Adapters.ProductsRecycleAdapter
 import com.aspire.coderswag.R
 import com.aspire.coderswag.Services.DataService
 import com.aspire.coderswag.Utilities.EXTRA_CATEGORY
 import kotlinx.android.synthetic.main.activity_products.*
-import kotlin.coroutines.Continuation
 
 class ProductsActivity : AppCompatActivity() {
 
-    lateinit var adapter: ProductsAdapter
+    lateinit var adapter: ProductsRecycleAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_products)
 
         val categoryType = intent.getStringExtra(EXTRA_CATEGORY)
-        adapter = ProductsAdapter(this, DataService.getProducts(categoryType))
 
+        val categoriesSelected = DataService.getProducts(categoryType)
+        adapter = ProductsRecycleAdapter(this, categoriesSelected)
+        if(categoriesSelected.isEmpty()) {
+            Toast.makeText(this, "No Product for $categoryType Available",Toast.LENGTH_SHORT).show()
+        }
         var spanCount = 2
         val orientation = resources.configuration.orientation
         if(orientation == Configuration.ORIENTATION_LANDSCAPE) {
